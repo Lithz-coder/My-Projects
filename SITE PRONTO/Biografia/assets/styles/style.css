@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #001FFF;
+  --cor-hover: #272727;
+  --fonte-primaria: "Krona One";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-primaria);
+}
+
+.apresentacao {
+  align-items: center;
+  margin: 10% 15%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.apresentacao_conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+  font-size: 2.25em;
+  font-family: "Krona One";
+}
+
+.apresentacao_conteudo_texto {
+  font-size: 1.5em;
+  font-family: "Krona One";
+}
+
+.titulo_destaque {
+  color: var(--cor-terciaria);
+}
+
+.apresentacao {
+  position: relative;
+}
+
+.apresentacao_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 500px;
+  height: 200px;
+}
+
+.apresentacao_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 500px;
+  height: 200px;
+}
+
+.apresentacao_links a {
+  font-size: 2em; 
+  color: var(--cor-terciaria);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.apresentacao_links a:hover {
+  transform: scale(1.1); 
+  color: var(--cor-secundaria); 
+}
+
+
+.apresentacao_links_links {
+  margin-right: 25px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; 
+  width: auto; 
+  text-align: center;
+  border: none; 
+  background: none;
+  text-decoration: none;
+  color: var(--cor-terciaria);
+}
+
+.apresentacao_botao_enviar {
+  border: 5px solid var(--cor-terciaria);
+  border-radius: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 10px 50px; 
+  text-decoration: none;
+  color: var(--cor-terciaria);
+  font-family: "Krona One";
+  background-color: var(--cor-primaria);
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apresentacao_botao_enviar:hover {
+  background-color: #000000(--cor-secundaria); 
+  transform: scale(1.05); 
+}
+
+
+.apresentacao_links_links:hover {
+  background-color: var(--cor-hover);
+}
+
+.rodape {
+  color: var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
+  padding: 24px;
+  text-align: center;
+  font-family: "Krona One" (--fonte-primaria);
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.cabecalho {
+  padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+  display: flex;
+  gap: 40px;
+}
+
+.cabecalho_menu a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cabecalho_menu a:hover {
+  transform: scale(1.1);
+  color: var(--cor-secundaria);
+}
+
+.cabecalho_menu_link {
+  font-family: var(--fonte-primaria);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.apresentacao_video, .apresentacao_imagem {
+  width: 50%;
+}
+
+table#tabelaspace {
+  border: 10px solid #606060;
+  border-spacing: 1px;
+  margin: 20px auto;
+  font-family: var(--fonte-primaria);
+}
+
+table#tabelaspace td {
+  border: 2px solid #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+table#tabelaspace th {
+  border: 1px solid #606060;
+  padding: 1%;
+  background-color: #272727;
+  text-align: center;
+  color: var(#000000);
+  font-size: 1rem;
+}
+
+.apresentacao_formulario_label {
+  font-size: 1.5em;
+  font-family: var( Krona One );
+  width: 1000px;
+}
+
+.apresentacao_imagem {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+    overflow: hidden;
+  }
+  .cabecalho_menu {
+    float: left;
+    display: block;
+    justify-content: center;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .apresentacao_conteudo {
+    width: auto;
+  }
+}
+
+.video_responsivo {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.apresentacao_formulario,
+.apresentacao_formulario_2,
+.apresentacao_formulario_text {
+    margin-bottom: 30px;
+}
